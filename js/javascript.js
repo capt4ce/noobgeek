@@ -1,4 +1,8 @@
-$(".button-collapse").sideNav();
+$(document).ready(function(){
+  $(".button-collapse").sideNav();
+  $('.carousel').carousel();
+});
+
 $(window).scroll(function(){
     var wScroll=$(this).scrollTop();
     console.log(wScroll);
