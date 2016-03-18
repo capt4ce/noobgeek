@@ -15,7 +15,7 @@
                 </div>
                 </div></a>
             </div>
-                    
+
             <div class="col s4 m4">
                 <a  href="#"><div class="card hoverable" href="#">
                 <div class="card-image">
@@ -27,7 +27,7 @@
                 </div>
                 </div></a>
             </div>
-            
+
             <div class="col s4 m4">
                 <a  href="#"><div class="card hoverable">
                 <div class="card-image">
@@ -48,8 +48,8 @@
     <div class="video-container">
         <iframe width="853" height="0" frameborder="0" allowfullscreen></iframe>
     </div>
-        
-            
+
+
     <br><div class="divider col s10"></div><br>
     <h3 class="center-align">OUR SERVICES AND PORTOFOLIO</h3><br>
     <div class="row center-align">
@@ -64,7 +64,7 @@
         <div class="col s4">
             <h5>Service 3</h5>
             <p>adfakdhkjhadfkjkabdkfbkjb</p>
-        </div>  
+        </div>
     </div>
 
     <br><div class="divider"></div><br>
@@ -79,7 +79,7 @@
 </div>
 
 
-        
+
 <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
