@@ -2,16 +2,41 @@ body
   display: flex
   min-height: 100vh
   flex-direction: column
+  //background: none
 
 
 main
   flex: 1 0 auto
 
+header
+  height: 400px
+  width: 100%
+  position: fixed
+  overflow: hidden
+  z-index: 3
+  background:
+    image: url(../images/img-header.jpg)
+    size: contain
+    position: top center
+    attachment: fixed
 
 nav
+  position: fixed
+  z-index: 101
   opacity: 0.9
   filter: alpha(opacity=40) //For IE8 and earlier
 
+footer
+  position: fixed !important
+  bottom: 0px
+  width: 100%
+
+.content
+  background-color: white
+  position: relative
+  z-index: 100
+  margin-bottom: 400px
+  margin-top: 400px
 
 .svg-social
   fill: #ffffff
@@ -36,6 +61,17 @@ nav
     .window-tint
       top: 0%
 
+.periscope
+  height: 400px
+  width: 400px
+  position: relative
+  left: 30%
+  border-radius: 50%
+  background:
+    image: url(../images/me.jpg)
+    position: top center
+    repeat: no-repeat
+    attachment: fixed
 
 #nav-bar
   margin: 0px 20px 0px 20px
