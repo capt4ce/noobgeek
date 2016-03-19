@@ -16,7 +16,7 @@
         <header></header>
         <nav class="teal">
             <div class="nav-wrapper" id="nav-bar">
-                <a href="#" class="brand-logo center">{NoobGeek}</a>
+                <a href="#" class="brand-logo center">[NoobGeek]</a>
                 <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="articles.php">ARTICLES</a></li>
