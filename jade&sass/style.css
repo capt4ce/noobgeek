@@ -10,23 +10,11 @@ nav {
   opacity: 0.9;
   filter: alpha(opacity=40); }
 
-.slides {
-  background-color: black !important; }
-
 .svg-social {
   fill: #ffffff; }
 
-.articles {
-  opacity: 1; }
-
-.caption {
-  visibility: hidden; }
-
-.slider:hover .articles {
-  opacity: 0.3; }
-
-.slider:hover .caption {
-  visibility: visible; }
+.window-tint {
+  background-color: rgba(0, 0, 0, 0.5); }
 
 #nav-bar {
   margin: 0px 20px 0px 20px; }

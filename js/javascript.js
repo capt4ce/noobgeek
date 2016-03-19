@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $(".button-collapse").sideNav();
   $('.carousel').carousel();
+  $('.slider').slider({full_width: true});
 });
 
 $(window).scroll(function(){
