@@ -1,10 +1,10 @@
-<?php include('header.php')?>
-        
+<?php include('./header.php')?>
+
 <div class="container" id="content"><br>
-    
-    <!--profil--> 
+
+    <!--profil-->
     <p class="center">Hi! My name is Ahmad Ali Abdilah. I am originated from a beautiful country, Indonesia. I am currently is studying in NIT Kurukshetra, India; pursuing a bachelor degree in Computer Engineering.<br>
-I am just a person who is really passionate about technology and demanding challenges about technology. Although, I don't like theoritical knowledge rather would prefer practical ones. 
+I am just a person who is really passionate about technology and demanding challenges about technology. Although, I don't like theoritical knowledge rather would prefer practical ones.
 Not easy for me to deliver what I know, since I am more likely a technical person, not a linguist. But I am trying my best to do that.
     </p>
     <br>
@@ -19,10 +19,10 @@ Not easy for me to deliver what I know, since I am more likely a technical perso
     <a href="#" class="btn">
         <svg width="24" height="24" viewBox="0 0 24 24 "><path class="svg-social" d="M10,16.5V7.5L16,12M20,4.4C19.4,4.2 15.7,4 12,4C8.3,4 4.6,4.19 4,4.38C2.44,4.9 2,8.4 2,12C2,15.59 2.44,19.1 4,19.61C4.6,19.81 8.3,20 12,20C15.7,20 19.4,19.81 20,19.61C21.56,19.1 22,15.59 22,12C22,8.4 21.56,4.91 20,4.4Z" /></svg></a>
     </div>
-      
+
     <!--skills-->
     <br><div class="divider"></div><br>
-    <h3 class="center-align">SKILLS</h3>         
+    <h3 class="center-align">SKILLS</h3>
     <ul class="collapsible" data-collapsible="extendable">
         <li>
             <div class="collapsible-header"><i class="material-icons">filter_drama</i>Programming</div>
@@ -40,13 +40,13 @@ Not easy for me to deliver what I know, since I am more likely a technical perso
     <div class="row center-align" >
             <a class="waves-effect waves-light btn center-align">Check Services I Offer...</a>
     </div>
-    
+
     <!--Gallery-->
     <br><div class="divider"></div><br>
-    <h3 class="center-align">GALLERY</h3>  
+    <h3 class="center-align">GALLERY</h3>
 </div>
-        
-        
+
+
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="js/materialize.min.js"></script>
