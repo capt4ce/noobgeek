@@ -1,4 +1,4 @@
-<script type="text/javascript" src="js/javascript.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/javascript.js"></script>
 
 <footer class="page-footer grey darken-3">
     <div class="container">

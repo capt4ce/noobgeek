@@ -1,15 +1,17 @@
+var hHeight=$('header').height();
+var htmlMargin=parseInt($('html').css('margin-top').replace('px',''));
+
 $(document).ready(function(){
   $(".button-collapse").sideNav();
   $('.carousel').carousel();
   $('.slider').slider({full_width: true});
-  $(".button-collapse").sideNav();
   var wScreenY=window.pageYOffset;
-  console.log(wScreenY);
-  if (wScreenY >= $('header').height()){
-      $('nav').css({'top':'0px'});
+  console.log(hHeight-$('nav').height()-wScreenY+htmlMargin+'px');
+  if (wScreenY >= hHeight){
+      $('nav').css({'top':htmlMargin+'px'});
   }
   else{
-      $('nav').css({'top': $('header').height()-$('nav').height()-wScreenY+'px'});
+      $('nav').css({'top': hHeight-$('nav').height()-wScreenY+htmlMargin+'px'});
   }
   $('.content').css({'margin-bottom': $('footer').height()+'px'});
 });
@@ -25,10 +27,10 @@ $(window).scroll(function(){
     else{
         $('#navbar-fixed-id').removeClass('navbar-fixed');
     }*/
-    if (wScroll >= $('header').height()-$('nav').height()){
-        $('nav').css({'top':'0px'});
+    if (wScroll >= hHeight-$('nav').height()){
+        $('nav').css({'top':htmlMargin+'px'});
     }
     else{
-        $('nav').css({'top': $('header').height()-$('nav').height()-wScroll});
+        $('nav').css({'top': hHeight-$('nav').height()-wScroll+htmlMargin+'px'});
     }
 });

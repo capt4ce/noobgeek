@@ -1,0 +1,63 @@
+<?php /* Template Name: Articles Template */ ?>
+<?php include('header.php');?>
+br
+section.content
+  .container
+    br
+    br
+    h3.center-align CATEGORIES
+    br
+    ul.collapsible.popout(data-collapsible='accordion')
+      li
+        .collapsible-header Electronics & Arduino
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+      li
+        .collapsible-header Web Development
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+      li
+        .collapsible-header Programming
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+      li
+        .collapsible-header Hacking
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+      li
+        .collapsible-header Projects
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+      li
+        .collapsible-header Others
+        .collapsible-body
+          |Lorem ipsum dolor sit amet.
+    br
+    .divider
+    .row
+      .col.s9.m9
+        br
+        h4.center-align Articles
+        br
+        <?php query_posts(array('post_type'  => 'post')); if(have_posts()) : while(have_posts()) : the_post(); ?>
+        .card-panel.white
+          span.black-text
+            h5.titles
+              <a href="<?php the_permalink();?>">
+                <?php the_title();?>
+              </a>
+            small.dates
+              <?php the_date();?>
+              br
+            <?php the_content();?>
+        <?php endwhile; endif; wp_reset_query();?>
+
+      .col.s3.m3
+        br
+        h4.center-align Sidebar
+        br
+        .card-panel.white
+//Import jQuery before materialize.js
+<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<?php include('footer.php');?>
