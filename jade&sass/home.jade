@@ -1,0 +1,71 @@
+<?php include('header.php');?>
+br
+section.content
+  .container
+    br
+    //hot-articles
+    .row
+      .col.s12
+        h3.center-align HOT ARTICLES
+        br
+        .slider
+          ul.slides
+            <?php query_posts(array('post_type'  => 'post', 'meta_key' => '_thumbnail_id', 'posts_per_page'=>5)); if(have_posts()) : while(have_posts()) : the_post(); ?>
+            li
+              <a href="<?php the_permalink();?>">
+                //think how to remove 'sizes' attribute to make the image keep its normal ratio even inside the slider
+                <?php the_post_thumbnail('post_thumbnail',array('class'=>'articles'));?>
+                .window-tint
+                  .caption.left-align
+                    h4.truncate
+                      <?php the_title();?>
+                    .divider
+                    p
+                      <?php the_excerpt();?>
+              </a>
+            <?php endwhile; endif; wp_reset_query();?>
+    //lastest videos
+    br
+    .divider
+    br
+    h3.center-align LASTEST VIDEOS
+    .video-container
+      iframe(width='853', height='0', frameborder='0' allowfullscreen='')
+
+    //services and portofolio
+    br
+    .divider
+    br
+    h3.center-align OUR SERVICES AND PORTOFOLIO
+    .row.center-align
+      .col.s4
+        h5 Service 1
+        p adfakdhkjhadfkjkabdkfbkjb
+      .col.s4
+        h5 Service 2
+        p adfakdhkjhadfkjkabdkfbkjb
+      .col.s4
+        h5 Service 3
+        p adfakdhkjhadfkjkabdkfbkjb
+
+    //customers
+    br
+    .divider
+    br
+    h3.center-align OUR CUSTOMERS
+    .carousel
+      a.carousel-item(href='#one')
+        img(src='images/1.jpg')
+      a.carousel-item(href='#two')
+        img(src='images/2.jpg')
+      a.carousel-item(href='#three')
+        img(src='images/3.jpg')
+      a.carousel-item(href='#four')
+        img(src='images/4.jpg')
+      a.carousel-item(href='#five')
+        img(src='images/5.jpg')
+
+  //required javascript
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.2.0.min.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/materialize.min.js"></script>
+<?php include('footer.php');?>
