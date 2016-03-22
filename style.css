@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto; }
+
+nav {
+  opacity: 0.9;
+  filter: alpha(opacity=40); }
+
+.svg-social {
+  fill: #ffffff; }
+
+#nav-bar {
+  margin: 0px 20px 0px 20px; }
