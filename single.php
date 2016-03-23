@@ -31,3 +31,4 @@
     </div>
   </div>
 </section><?php include('footer.php')?>
+<?php wp_footer()?>

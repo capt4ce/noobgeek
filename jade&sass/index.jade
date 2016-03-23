@@ -1,7 +1,42 @@
 <?php include('header.php')?>
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+section.content
+  br
+  .container
+    .row
+      .col.s9.m9
+        article
+          .card-panel.white
+            span.black-text
+              h5.titles
+                <a href="<?php the_permalink();?>">
+                  <?php the_title();?>
+                </a>
+              small.dates
+                <?php the_time('F jS, Y'); ?>
+                br
+                p Category:
+                  <?php the_category(); ?>
+                p Tags:
+                  <?php the_tags(); ?>
+              .divider
+              br
+              <?php the_content();?>
+              br
+              .divider
+              br
+              #share-buttons
+                //facebook
+                <a class="share-social" href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&amp;t=<?php the_title(); ?>" title="Share on Facebook.">Share on Facebook</a>
+                //facebook
+                <a class="share-social" href="http://www.linkedin.com/shareArticle?mini=true&amp;title=<?php the_title(); ?>&amp;url=<?php the_permalink(); ?>" title="Share on LinkedIn">Share on LinkedIn</a>
+                //gplus
+                <a class="share-social" href="https://plus.google.com/share?url=<?php the_permalink(); ?>" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">Share on G+</a>
+        <?php endwhile; endif; wp_reset_query();?>
 
+      .col.s3.m3
+        aside
+          .card-panel.white
+            <?php dynamic_sidebar('side-widgets');?>
 
-//Import jQuery before materialize.js
-<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
 <?php include('footer.php')?>

@@ -13,6 +13,34 @@
   This theme, like WordPress, is licensed under the GPL.
   Use it to make something cool, have fun, and share what you've learned with others.
   */
+/*
+  @font-face
+    font-family: 'Material Icons'
+    font-style: normal
+    font-weight: 400
+    //for IE
+    src: url(material-icons/MaterialIcons-Regular.eot)
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(material-icons/MaterialIcons-Regular.woff2) format('woff2'),url(material-icons/MaterialIcons-Regular.woff) format('woff'),url(material-icons/MaterialIcons-Regular.ttf) format('truetype')
+
+  .material-icons
+    font-family: 'Material Icons'
+    font-weight: normal
+    font-style: normal
+    //Preferred icon size
+    font-size: 24px
+    display: inline-block
+    line-height: 1
+    text-transform: none
+    letter-spacing: normal
+    word-wrap: normal
+    white-space: nowrap
+    direction: ltr
+
+  */
+
+
+
+
 body
   display: flex
   min-height: 100vh
@@ -45,6 +73,13 @@ footer
   position: fixed !important
   bottom: 0px
   width: 100%
+
+.ico-services
+  font-size: 128px
+  color: teal
+
+.services
+    text-align: justify
 
 .content
   background-color: #ecf0f1
@@ -79,8 +114,6 @@ footer
   color: white
   border: 1px solid yellow
   margin: 5px !important
-
-.btn-social
   &:hover
     background: rgba(0,0,0,0.7)
 
@@ -90,16 +123,32 @@ footer
       top: 0%
 
 .periscope
-  height: 400px
-  width: 400px
+  height: 300px
+  width: 300px
   position: relative
-  left: 30%
+  left: 35%
   border-radius: 50%
   background:
-    image: url(../images/me.jpg)
-    position: top center
+    image: url(images/me.jpg)
+    position: top 30px center
     repeat: no-repeat
     attachment: fixed
+
+.share-social
+  width: auto
+  display: inline
+  border: 1px solid yellow
+  background: rgba(0,0,0,0.5)
+  padding: 7px 5px
+  text-decoration: none
+  color: white
+  &:hover
+    background: rgba(0,0,0,0.7)
+
+.widget
+  list-style: none
+  h2
+    font-size: 23px
 
 #nav-bar
   margin: 0px 20px 0px 20px

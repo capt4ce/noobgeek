@@ -1,43 +1,10 @@
-<?php /* Template Name: Articles Template */ ?>
-<?php include('header.php');?>
-br
+<?php include('header.php')?>
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 section.content
+  br
   .container
-    br
-    br
-    h3.center-align CATEGORIES
-    br
-    ul.collapsible.popout(data-collapsible='accordion')
-      li
-        .collapsible-header Electronics & Arduino
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-      li
-        .collapsible-header Web Development
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-      li
-        .collapsible-header Programming
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-      li
-        .collapsible-header Hacking
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-      li
-        .collapsible-header Projects
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-      li
-        .collapsible-header Others
-        .collapsible-body
-          |Lorem ipsum dolor sit amet.
-    br
-    .divider
     .row
       .col.s9.m9
-        br
-        <?php query_posts(array('post_type'  => 'post')); if(have_posts()) : while(have_posts()) : the_post(); ?>
         article
           .card-panel.white
             span.black-text
@@ -46,8 +13,12 @@ section.content
                   <?php the_title();?>
                 </a>
               small.dates
-                <?php the_time('F jS, Y') ?>
-              br
+                <?php the_time('F jS, Y'); ?>
+                br
+                p Category:
+                  <?php the_category(); ?>
+                p Tags:
+                  <?php the_tags(); ?>
               .divider
               br
               <?php the_content();?>
@@ -64,8 +35,9 @@ section.content
         <?php endwhile; endif; wp_reset_query();?>
 
       .col.s3.m3
-        br
-        .card-panel.white
-          <?php dynamic_sidebar('side-widgets');?>
-<?php include('footer.php');?>
+        aside
+          .card-panel.white
+            <?php dynamic_sidebar('side-widgets');?>
+
+<?php include('footer.php')?>
 <?php wp_footer()?>

@@ -29,26 +29,25 @@
     </div>
     <!--services and portofolio--><br/>
     <div class="divider"></div><br/>
-    <h3 class="center-align">OUR SERVICES AND PORTOFOLIO</h3>
+    <h3 class="center-align">OUR SERVICES AND PORTOFOLIO</h3><br/>
     <div class="row center-align">
-      <div class="col s4">
-        <h5>Service 1</h5>
-        <p>adfakdhkjhadfkjkabdkfbkjb</p>
+      <div class="col s4"><i class="material-icons ico-services">create</i>
+        <h5>Design Graphic</h5>
+        <p class="services">As we enter the digital era, it is essential to extend your marketing accross digital edge where people are. In order to do that, you need our service to design efective way to communicate your product to audience.</p>
       </div>
-      <div class="col s4">
-        <h5>Service 2</h5>
-        <p>adfakdhkjhadfkjkabdkfbkjb</p>
+      <div class="col s4"><i class="material-icons ico-services">web</i>
+        <h5>Web Design</h5>
+        <p class="services">Internet has been able to spread the information wider, faster, and cheaper through human history. You will need our web design service to tell larger amount of people your product or services, or even for a small thing only lke your personal/company identity.</p>
       </div>
-      <div class="col s4">
-        <h5>Service 3</h5>
-        <p>adfakdhkjhadfkjkabdkfbkjb</p>
+      <div class="col s4"><i class="material-icons ico-services">code</i>
+        <h5>Software Development</h5>
+        <p class="services">Technology is meant for easing our works. And with coomputer your work can be done in much more efficiently. Use our Software Development service to have your very own custom software and get your works easily done more easily and efficiently.</p>
       </div>
     </div>
     <!--customers--><br/>
     <div class="divider"></div><br/>
     <h3 class="center-align">OUR CUSTOMERS</h3>
-    <div class="carousel"><a class="carousel-item" href="#one"><img src="images/1.jpg"/></a><a class="carousel-item" href="#two"><img src="images/2.jpg"/></a><a class="carousel-item" href="#three"><img src="images/3.jpg"/></a><a class="carousel-item" href="#four"><img src="images/4.jpg"/></a><a class="carousel-item" href="#five"><img src="images/5.jpg"/></a></div>
+    <div class="carousel"><a class="carousel-item" href="#one"><img src="<?php bloginfo('template_url');?>/images/1.jpg"/></a><a class="carousel-item" href="#two"><img src="<?php bloginfo('template_url');?>/images/2.jpg"/></a><a class="carousel-item" href="#three"><img src="<?php bloginfo('template_url');?>/images/3.jpg"/></a><a class="carousel-item" href="#four"><img src="<?php bloginfo('template_url');?>/images/4.jpg"/></a><a class="carousel-item" href="#five"><img src="<?php bloginfo('template_url');?>/images/5.jpg"/></a></div>
   </div>
-  <!--required javascript--><script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.2.0.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/materialize.min.js"></script>
 </section><?php include('footer.php');?>
+<?php wp_footer();?>

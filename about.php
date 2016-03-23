@@ -1,3 +1,4 @@
+<?php /* Template Name: About Template */ ?>
 <?php include('header.php')?>
 <section class="content">
   <!--profile-->
@@ -41,3 +42,4 @@
 <!--required javascript-->
 <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script><?php include('footer.php')?>
+<?php wp_footer()?>
