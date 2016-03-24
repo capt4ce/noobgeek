@@ -18,7 +18,6 @@ $(document).ready(function(){
 
 $(window).scroll(function(){
     var wScroll=$(this).scrollTop();
-    console.log(wScroll);
     <!--//fixed navigation bar-->
     /*if (wScroll >= $('header').height()){
         $('#navbar-fixed-id').addClass('navbar-fixed');
@@ -27,7 +26,7 @@ $(window).scroll(function(){
     else{
         $('#navbar-fixed-id').removeClass('navbar-fixed');
     }*/
-    if (wScroll >= hHeight-$('nav').height()){
+    if ((wScroll >= hHeight-$('nav').height()) && $(window).width()>600){
         $('nav').css({'top':htmlMargin+'px'});
     }
     else{

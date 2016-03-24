@@ -33,8 +33,9 @@ header {
   overflow: hidden;
   z-index: 3;
   background-image: url(images/img-header.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
   background-attachment: fixed; }
 
 nav {
@@ -49,11 +50,19 @@ footer {
   width: 100%; }
 
 .ico-services {
-  font-size: 128px;
+  font-size: 700%;
   color: teal; }
 
 .services {
   text-align: justify; }
+
+.menu-mobile a {
+  text-decoration: none !important;
+  color: white !important;
+  display: block;
+  padding: 10px 0px; }
+  .menu-mobile a:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
 
 .content {
   background-color: #ecf0f1;
@@ -94,6 +103,9 @@ footer {
 .slides:hover .window-tint {
   top: 0%; }
 
+.video-container {
+  background: rgba(0, 0, 0, 0.5); }
+
 .periscope {
   height: 300px;
   width: 300px;
@@ -121,5 +133,55 @@ footer {
   .widget h2 {
     font-size: 23px; }
 
+.skills {
+  list-style-type: disc !important;
+  margin-left: 10px; }
+
+.comment-list li.comment {
+  margin-bottom: 20px; }
+  .comment-list li.comment .depth-2, .comment-list li.comment .depth-3 {
+    margin: 20px 0px 0px 20px;
+    border-top: 1px dotted #CCC;
+    padding-top: 10px; }
+
+.comment-list p {
+  clear: both;
+  margin: 10px 0; }
+
+.comment-list a, #respond a {
+  text-decoration: none;
+  color: #4b4b4b;
+  font-weight: bold; }
+  .comment-list a:hover, #respond a:hover {
+    text-decoration: underline; }
+
+.comment-header {
+  height: 50px; }
+  .comment-header img {
+    float: left;
+    margin-right: 10px; }
+
+.logged-in-as {
+  margin: 15px 0; }
+
 #nav-bar {
   margin: 0px 20px 0px 20px; }
+
+textarea {
+  resize: none;
+  width: 70%;
+  height: 150px; }
+
+label {
+  color: black; }
+
+ol {
+  list-style-type: none; }
+
+#submit {
+  background: teal;
+  color: white;
+  padding: 12px 5px;
+  border: none; }
+  #submit:hover {
+    background: #26a69a; }

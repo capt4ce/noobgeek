@@ -1,5 +1,6 @@
 
-<!--Import jQuery before materialize.js--><script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.2.0.min.js"></script>
+<!--Import jQuery before materialize.js--></section>
+<script type="text/javascript" src="<?php bloginfo('template_url');?>/js/jquery-2.2.0.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/materialize.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url');?>/js/javascript.js"></script>
 <footer class="page-footer grey darken-3">
@@ -21,7 +22,7 @@
     </div>
   </div>
   <div class="footer-copyright">
-    <div class="container">© 2015 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a></div>
+    <div class="container">© 2016 Copyright Text<a class="grey-text text-lighten-4 right" href="#!">More Links</a></div>
   </div>
 </footer></body>
 </html>
